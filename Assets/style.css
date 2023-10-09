@@ -55,7 +55,7 @@ section{
 }
 
 @media (max-widht: 768px) {
-    .section-headerp {
+    .section-header p {
         font-size: 28px;
         line-height: 32px;
     }
@@ -168,7 +168,7 @@ section{
     transition: 0.3s;
 }
 
-.navbar a,
+.navbar a i,
 .navbar a:focus i {
     font-size: 12px;
     line-height: 0;
@@ -228,7 +228,7 @@ section{
     font-size: 12px;
 }
 
-.navbar .dropdown ul 
+.navbar .dropdown ul a:hover
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
     color: #4154f1;
@@ -236,7 +236,7 @@ section{
 
 .navbar .dropdown:hover>ul {
     opacity: 1;
-    top: 0;
+    top: 100%;
     visibility: visible;
 }
 
@@ -448,7 +448,7 @@ section{
     }
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 768px) { 
     .hero { 
         height: center; 
 }
@@ -514,7 +514,7 @@ section{
     transition: 0.3s;
 }
 
-    .about .btn-read-more:hover { 
+    .about .btn-read-more:hover i { 
         transform: translateX(5px);
 }
 /*-------------------------------------------------------------------------------------------------------
@@ -544,7 +544,7 @@ section{
     font-size: 36px;
     display: block;
     font-weight: 600;
-    color: #0b1981;
+    color: #0b198f;
 }
 
     .counts .count-box p {
@@ -570,7 +570,7 @@ section{
     margin: 0; 
 }
 
-.features .feature-box {
+.features .feature-box i {
     line-height: 0;
     background: #ecf3ff;
     margin-right: 10px; 
@@ -666,7 +666,7 @@ section{
     color: #012970;
 }
 
-.features .feature-icons .content .icon-box {
+.features .feature-icons .content .icon-box i {
     font-size: 44px; 
     line-height: 44px;
     color: #0245bc;
@@ -710,7 +710,7 @@ section{
 /*-------------------------------------------------------------------------------------------------------
 # Portofolio
 -------------------------------------------------------------------------------------------------------*/
-.portofolio #portofolio-filters {
+.portfolio #portfolio-flters {
     padding: 0;
     margin: 0 auto 25px auto;
     list-style: none;
@@ -720,7 +720,7 @@ section{
     padding: 2px 15px;
 }
 
-.portofolio #portofolio-filters li {
+.portfolio #portfolio-flters li {
     cursor: pointer;
     display: inline-block;
     padding: 8px 20px 10px 20px;
@@ -734,27 +734,27 @@ section{
     border: 1px solid #fff;
 }
 
-.portofolio #portofolio-filters li:hover,
-.portofolio #portofolio-filters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
     color: #4154f1;
     border-color: #4154f1;
 }
 
-.portofolio #portofolio-filters li:last-child {
+.portfolio #portfolio-flters li:last-child {
     margin-right: 0;
 }
 
-.portofolio .portofolio-wrap {
+.portfolio .portfolio-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(255, 266,255, 0.75);
+    background: rgba(255, 255,255, 0.75);
 }
 
-.portofolio .portofolio-wrap::before {
+.portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(255, 266,255, 0.75);
+    background: rgba(255, 255,255, 0.75);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -765,11 +765,11 @@ section{
     opacity: 0;
 }
 
-.portofolio .portofolio-wrap img {
+.portfolio .portfolio-wrap img {
     transition: 1s;
 }
 
-.portofolio .portofolio-wrap .portofolio-info {
+.portfolio .portfolio-wrap .portfolio-info {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -785,7 +785,7 @@ section{
     align-items: center;
 }
 
-.portofolio .portofolio-wrap .portofolio-info::before {
+.portfolio .portfolio-wrap .portfolio-info::before {
     display: block;
     content: "";
     width: 48px;
@@ -799,7 +799,7 @@ section{
     z-index: 9994;
 }
 
-.portofolio .portofolio-wrap .portofolio-info::after {
+.portfolio .portfolio-wrap .portfolio-info::after {
     display: block;
     content: "";
     width: 48px;
@@ -813,13 +813,13 @@ section{
     z-index: 9994;
 }
 
-.portofolio .portofolio-wrap .portofolio-info h4 {
+.portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
     color: #012970;
     font-weight: 700;
 }
 
-.portofolio .portofolio-wrap .portofolio-info p {
+.portfolio .portfolio-wrap .portfolio-info p {
     color: #012970;
     font-weight: 600;
     font-size: 14px;
@@ -828,12 +828,12 @@ section{
     margin: 0;
 }
 
-.portofolio .portofolio-wrap .portofolio-links  {
+.portfolio .portfolio-wrap .portfolio-links  {
     text-align: center;
     z-index: 4;
 }
 
-.portofolio .portofolio-wrap .portofolio-links a {
+.portfolio .portfolio-wrap .portfolio-links a {
     color: #fff;
     background: #4154f1;
     margin: 10px 2px;
@@ -846,20 +846,20 @@ section{
     transition: 0.3s;
 }
 
-.portofolio .portofolio-wrap .portofolio-links a i {
+.portfolio .portoflio-wrap .portfolio-links a i {
     font-size: 24px;
     line-height: 0;
 }
 
-.portofolio .portofolio-wrap .portofolio-links a:hover {
+.portfolio .portfolio-wrap .portfolio-links a:hover {
     background: #5969f3;
 }
 
-.portofolio .portofolio-wrap:hover img {
+.portfolio .portfolio-wrap:hover img {
     transform: scale(1.1);
 }
 
-.portofolio .portofolio-wrap:hover::before {
+.portfolio .portfolio-wrap:hover::before {
     top: 0;
     left: 0;
     right: 0;
@@ -867,36 +867,36 @@ section{
     opacity: 1;
 }
 
-.portofolio .portofolio-wrap:hover .portofolio-info {
+.portfolio .portfolio-wrap:hover .portofolio-info {
     opacity: 1;
 }
 
-.portofolio .portofolio-wrap:hover .portofolio-info::before {
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
     top: 15px;
     left: 15px;
 }
 
-.portofolio .portofolio-wrap:hover .portofolio-info::after {
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
     bottom: 15px;
     right: 15px;
 }
 /*-------------------------------------------------------------------------------------------------------
 # Portofolio Details
 -------------------------------------------------------------------------------------------------------*/
-.portofolio-details {
+.portfolio-details {
     padding-top: 40px;
 }
 
-.portofolio-details .portofolio-details-slider img {
+.portfolio-details .portfolio-details-slider img {
     width: 100%;
 }
 
-.portofolio-details .portofolio-details-slider .swiper-pagination {
+.portfolio-details .portfolio-details-slider .swiper-pagination {
     margin-top: 20px;
     position: relative;
 }
 
-.portofolio-details .portofolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -904,16 +904,16 @@ section{
     border: 1px solid #4154f1;
 }
 
-.portofolio-details .portofolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #4154f1;
 }
 
-.portofolio-details .portofolio-info {
+.portfolio-details .portfolio-info {
     padding: 30px;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
-.portofolio-details .portofolio-info h3 {
+.portfolio-details .portfolio-info h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -921,27 +921,27 @@ section{
     border-bottom: 1px solid #eee;
 }
 
-.portofolio-details .portofolio-info ul {
+.portfolio-details .portfolio-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
 }
 
-.portofolio-details .portofolio-info ul li+li {
+.portfolio-details .portfolio-info ul li+li {
     margin-top: 10px;
 }
 
-.portofolio-details .portofolio-description {
+.portfolio-details .portfolio-description {
     padding-top: 30px;
 }
 
-.portofolio-details .portofolio-description h2 {
+.portfolio-details .portfolio-description h2 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.portofolio-details .portofolio-description p {
+.portfolio-details .portfolio-description p {
     padding: 0;
 }
 /*-------------------------------------------------------------------------------------------------------
@@ -952,7 +952,7 @@ section{
     padding: 60px 0;
 }
 
-.team .member .member-img {
+.team .member  {
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
