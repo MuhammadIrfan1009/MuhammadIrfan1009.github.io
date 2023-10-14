@@ -377,9 +377,10 @@ section{
 .hero {
     width: 100%;
     height: 100vh;
-    background: url(../img/hero-bg.png) top center no-repeat;
+    background: url('img/hero-img.jpg') top center no-repeat;
     background-size: cover;
 }
+
 
 .hero h1 {
     margin: 0;
@@ -389,7 +390,7 @@ section{
 }
 
 .hero h2 {
-    color:#444444 ;
+    color:#ffffff ;
     margin: 15px 0 0 0;
     font-size: 26px;
 }
